@@ -141,3 +141,10 @@ th {
         background-size: 130%;
     }
 }
+
+
+@media (max-width: 600px) {
+    .background-img {
+        .container: width: 10%;
+    }
+}
