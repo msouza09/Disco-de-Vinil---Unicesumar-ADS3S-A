@@ -146,5 +146,6 @@ th {
 @media (max-width: 600px) {
     .background-img {
         .margem-interna : width: 10%;
+        .centro tabela truculenta-100 background-marrom: width: 15%;
     }
 }
