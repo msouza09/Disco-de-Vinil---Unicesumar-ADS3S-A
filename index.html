@@ -1,43 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vinil Records</title>
+    <title>Time Machine</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rye&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
-
-    <link rel="icon" href="./img/vinil.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20230303/ourmid/pngtree-vinyl-records-png-image_6629914.png" type="image/png">
     <link rel="stylesheet" href="./css/main.css">
+    
 </head>
 <body>
 
 <nav class="menu background-img">
-    <div class="truculenta-100"> <img src="./img/vinil.png" width="150" height="150"></div>
+    <div class="truculenta-100"></div>
 </nav>
 
 <section class="container centro">
 
-    <h3 class="fonte-titulo posicao titulo margem-interna">Vinil Records</h3>
+    <h1 class="fonte-titulo titulo margem-interna">Time Machine</h1>
 
     <div class="margem-interna centro">
-        <label for="item" class="truculenta-100 label-input margem-interna"></label>
+        <label for="imagemUrl" class="truculenta-100 label-input margem-interna">URL da Imagem</label>
+        <input type="text" id="imagemUrl" name="imagemUrl" class="caixa-texto input-centralizado" placeholder="Insira a URL da imagem">
+        
+        <label for="item" class="truculenta-100 label-input margem-interna">Nome</label>
         <input type="text" id="item" name="item" class="caixa-texto input-centralizado" placeholder="Digite o nome">
         
-        <label for="autor" class="truculenta-100 label-input margem-interna"></label>
+        <label for="autor" class="truculenta-100 label-input margem-interna">Autor</label>
         <input type="text" id="autor" name="autor" class="caixa-texto input-centralizado" placeholder="Digite o autor">
         
-        <label for="quantidade" class="truculenta-100 label-input margem-interna"></label>
+        <label for="quantidade" class="truculenta-100 label-input margem-interna">Quantidade</label>
         <input type="number" id="quantidade" name="quantidade" class="caixa-texto input-centralizado" placeholder="Digite a quantidade">
         
-        <label for="ano" class="truculenta-100 label-input margem-interna"></label>
+        <label for="ano" class="truculenta-100 label-input margem-interna">Data de Publicação</label>
         <input type="date" id="ano" name="ano" class="caixa-texto input-centralizado" placeholder="Escolha o ano">
         
 
@@ -48,10 +48,11 @@
     </div>
     
 
-    <div class="margem-interna ">
+    <div class="margem-interna teste ">
         <table class="centro tabela truculenta-100 background-marrom">
             <thead>
             <tr>
+                <th>Imagem</th>
                 <th>Nome</th>
                 <th>Autor</th>
                 <th>Quantidade</th>
@@ -69,7 +70,14 @@
 
 </section>
 
+<footer class="rodape">
+    <p>Direitos Reservados &copy; <span id="ano-atual"></span></p>
+</footer>
+
 <script src="./js/main.js"></script>
+<script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
