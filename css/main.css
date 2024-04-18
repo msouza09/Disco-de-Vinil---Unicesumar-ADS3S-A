@@ -13,7 +13,7 @@ body {
     background-size: cover; 
     background-position: center; 
     font-family: Arial, sans-serif; 
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
